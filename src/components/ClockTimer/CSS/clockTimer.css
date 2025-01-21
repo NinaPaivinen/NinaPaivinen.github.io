@@ -1,0 +1,407 @@
+.section_clock_timer {
+  
+  text-align: center !important;
+  padding: 20px;
+  
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.end{
+  background: linear-gradient(to right, #ececec, #b3d0e4);
+
+}
+
+.consol{
+  padding: 10px;
+  margin: 10px;
+  background-color: #dddddd80;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.timer_time{
+  font-weight: 700;
+  font-size: 2.25vh;
+}
+
+.day-name {
+  margin: 2px;
+  font-weight: bold;
+  width: 32.5px;
+  text-align: center;
+}
+
+.section_timer_box_container {
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
+  align-items: center; 
+  gap: 5px;
+}
+
+.section_timer_box_container_button_box {
+  display: grid;
+  grid-template-columns: auto auto; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  gap: 5px; 
+  height: 100%; 
+}
+
+.grid-item2 {
+  justify-self: start; 
+}
+
+.grid-item {
+  justify-self: center; 
+  font-weight: 500;
+}
+
+.grid-item3 {
+  justify-self: end; 
+}
+
+
+ .time-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.section_timer_box_container2 {
+  display: grid;
+  grid-template-columns: auto ; 
+  align-items: center; 
+  gap: 5px; 
+}
+
+.clocker_days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+ }
+
+
+.clocker_timer_button2 {
+  justify-content: center !important;
+   background-color: var(--medium-blue);
+   border: solid transparent;
+   border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   border-width: 0 0 4px;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-size: 15px;
+   font-weight: 700;
+   letter-spacing: .8px;
+   line-height: 20px;
+   margin: 0;
+   outline: none;
+   overflow: visible;
+   padding: 13px 16px;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ .timer_datee{
+  font-weight: 700;
+  padding: 20px !important;
+  margin: 20px !important;
+  font-size: 2.5vh !important;
+ }
+ 
+ .timer_end_box-time{
+  padding: 20px;
+  margin: 10px;
+  background-color: #1b478a25;
+  border-radius: 20px;
+ }
+
+ .timer_end_box-time2{
+  padding: 20px;
+  margin: 10px;
+  background-color: #c6d2e425;
+  border-radius: 20px;
+ }
+
+ .section_end{
+padding-top: 40px;
+ }
+
+ .clocker_timer_button2:hover{
+  background-color: rgb(91, 137, 236);
+ }
+ 
+
+ .section_timer_box_container3 {
+  align-items: center !important;
+  
+}
+
+
+
+.timer_h1{
+  
+  justify-self: center !important; 
+}
+
+.timer_input{
+  justify-self: center !important; 
+}
+
+
+.clocker_timer_button {
+
+  background-color: rgb(0, 179, 45);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 2.25vh;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.clocker_timer_button:hover{
+  background-color: rgb(15, 214, 65);
+ }
+ 
+
+.clock_time{
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.clock_time2{
+  font-size: 2.0vh;
+  font-weight: bold;
+}
+
+.clocker_timer_button_red {
+
+  display: flex; 
+  align-items: center !important; 
+gap: 5px;
+  background-color: rgb(211, 0, 0);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 2.0vh;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.clocker_timer_button_red:hover{
+  background-color: rgba(216, 15, 15, 0.747);
+ }
+ 
+
+.clocker_timer_button_grey {
+  gap: 5px;
+  display: flex;
+  align-items: center !important; 
+  background-color: rgb(248, 248, 248);
+  border: solid transparent;
+  border-radius: 16px;
+  box-sizing: border-box;
+  border: 1px solid #cacaca;
+  color: #696969;
+  cursor: pointer;
+  font-size: 2.0vh;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.clocker_timer_button_grey1 {
+
+  background-color: rgb(187, 187, 187);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 2.25vh;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+
+.clocker_timer_button_grey:hover{
+  background-color: rgba(253, 253, 253, 0.747);
+ }
+ .clocker_timer_button_grey1:hover{
+  background-color: rgba(160, 160, 160, 0.747);
+  cursor: not-allowed;
+
+ }
+ 
+
+.button_days {
+  border: solid transparent;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #050505;
+  cursor: pointer;
+  font-size: 2.0vh;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clocker_timer_lapinak{
+  background-color: transparent !important;
+ color: var(--medium-blue);
+
+ font-size: 3vh;
+  border: none;
+}
+
+.clocker_timer_lapinak:hover{
+  color: rgba(0, 100, 194, 0.76)
+ }
+
+ .banned:hover{
+  cursor: not-allowed;
+ }
+ 
+
+
+.clocker_timer_lapinak2{
+  background-color: transparent !important;
+ color: rgb(0, 194, 0);
+ font-size: 3vh;
+  border: none;
+}
+
+.clocker_timer_lapinak2:hover{
+  cursor: default
+}
+
+.section_clock_container {
+}
+
+@media (max-width: 767px) {
+  .section_clock_timer {
+  
+    padding: 10px;
+    
+  }
+  .section_clock_container {
+    width: 90% !important;
+  
+  }
+
+.clocker_timer_button_grey {
+  gap: 2.5px;
+  padding: 9px 12px;
+}
+
+.clocker_timer_button_red {
+  gap: 2.5px;
+  padding: 9px 12px;
+}
+
+}
+
+
+@media (max-width: 900px) {
+  .section_end{
+    padding-top: 20px;
+     }
+    
+  .section_clock_container {
+    width: 75%;
+  }
+}
+
+.settings_toggle {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button-yes {
+  background-color: rgb(10, 226, 64);
+  color: white;
+}
+
+.button-no {
+  background-color: red;
+  color: white;
+}
+
+
+.settings_toggle:hover {
+  background-color: #0056b3;
+}
+
+
+.settings_inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings_label {
+  font-size: 16px;
+  color: #333;
+}

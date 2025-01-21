@@ -1,0 +1,109 @@
+
+
+
+/* --------- ***************************************************************************************/
+/* FOOTER Section  */
+/* --------- ****************************************************************************************/
+
+
+.footer {
+    text-align: center !important;
+    position:fixed;
+    left: 0;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999999999999999999999999999999999;
+  }
+
+  .green-ball {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background-color: rgb(0, 221, 0);
+  }
+
+  .grey-ball {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background-color: rgb(153, 153, 153);
+  }
+
+  .footer_icon{
+    position: relative;
+    font-size: 3.25vh;
+  }
+  
+  .footer h3 {
+      font-size: 16px;
+      color: rgb(36, 36, 36);
+      text-align: center;
+  }
+  
+  .copyright{
+    border-top: 2px solid rgb(237, 254, 255); /* Aseta reunaviivan paksuus ja väri */
+    padding-top: 5px; /* Lisää hieman tilaa tekstin ja reunaviivan väliin */
+      }
+  
+  
+  .stylin{
+    padding-top: -10px;
+    color: white;
+  }
+
+  
+  .footer-content {
+    padding-right: 20px;
+    
+    padding-left: 20px;
+  display: flex;
+  
+  justify-content: space-between;
+    
+  align-items: center;
+}
+  
+.footer-item {
+  display: flex;
+  font-size: 2.0vh;
+  flex-direction: column; /* Asettaa sisällön pystysuunnassa */
+  align-items: center;    /* Keskittää sisällön vaaka-akselilla */
+  gap: 4px;               /* Asettaa etäisyyttä ikonien ja tekstien väliin */
+}
+
+.footer__link.normal{
+  color: rgb(126, 126, 126) !important;
+}
+
+.footer__link.active {
+  font-weight: 400;
+  text-decoration: underline  rgb(85, 133, 236);
+  text-shadow: 1px 2px 10px rgb(233, 233, 233);
+  color: rgb(0, 97, 177) !important;
+  font-weight: bold;
+}
+
+.footer__link {
+  color: rgb(37, 37, 37) !important;
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  .footer-content {
+    padding-right: 5px;
+    
+    padding-left: 5px;
+  }
+  
+}
+  
