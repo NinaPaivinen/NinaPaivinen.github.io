@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer.js";
 import ClockTimer from "./components/ClockTimer/ClockTimer.js";
 import Home from "./components/Home/Home";
 import {
-  HashRouter as Router,  // Vaihda BrowserRouter -> HashRouter
+  HashRouter as Router,  
   Route,
   Routes,
   Navigate
@@ -13,11 +13,11 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);  // Korjattu kirjoitusvirhe "upadateLoad"
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);
@@ -30,7 +30,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/#/clock_timer" element={<ClockTimer />} />
+            <Route path="/clock_timer" element={<ClockTimer />} /> 
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
