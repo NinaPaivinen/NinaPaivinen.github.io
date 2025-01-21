@@ -4,7 +4,8 @@ import Footer from "./components/Footer/Footer.js";
 import ClockTimer from "./components/ClockTimer/ClockTimer.js";
 import Home from "./components/Home/Home";
 import {
-  HashRouter as Router,  
+  HashRouter,  
+  Router,
   Route,
   Routes,
   Navigate
@@ -24,6 +25,7 @@ function App() {
   }, []);
 
   return (
+    <HashRouter>
     <Router>
       <Preloader load={load} /> 
       <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -37,6 +39,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </HashRouter>
   );
 }
 
