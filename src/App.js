@@ -29,8 +29,7 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/clock_timer" element={<ClockTimer />} />
+            <Route path="/" element={<ClockTimer />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
