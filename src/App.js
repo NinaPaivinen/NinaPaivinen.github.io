@@ -26,7 +26,6 @@ function App() {
 
   return (
     <HashRouter>
-    <Router>
       <Preloader load={load} /> 
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <main>
@@ -38,7 +37,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
     </HashRouter>
   );
 }
