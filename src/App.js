@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import Preloader from "./components/PreLoader/Pre.js";
 import Footer from "./components/Footer/Footer.js";
 import ClockTimer from "./components/ClockTimer/ClockTimer.js";
-
 import Home from "./components/Home/Home";
 import {
-
-  BrowserRouter as Router,
+  HashRouter as Router,  // Vaihda BrowserRouter -> HashRouter
   Route,
   Routes,
   Navigate
@@ -29,12 +27,10 @@ function App() {
     <Router>
       <Preloader load={load} /> 
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-     
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/clock_timer" element={<ClockTimer />} />
-            
+            <Route path="/#/clock_timer" element={<ClockTimer />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
