@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/PreLoader/Pre.js";
-import Navbar from "./components/Navbar/Navbar.js";
 import Footer from "./components/Footer/Footer.js";
 import ClockTimer from "./components/ClockTimer/ClockTimer.js";
 
 import Home from "./components/Home/Home";
 import {
-  HashRouter as Router,  // Muutettu BrowserRouter -> HashRouter
+
+  BrowserRouter as Router,
   Route,
   Routes,
   Navigate
@@ -29,7 +29,7 @@ function App() {
     <Router>
       <Preloader load={load} /> 
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+     
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

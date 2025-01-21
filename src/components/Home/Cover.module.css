@@ -12,7 +12,6 @@
  left: 50%;
  transform: translate(-50%, -50%);
  
- opacity: 0.6 !important; /* 50% läpinäkyvä */
  z-index: 20 !important;
 }
 
@@ -22,7 +21,6 @@
   background-size: cover;
   position: relative;
   height: 800px;
-  opacity: 0.5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
