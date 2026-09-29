@@ -1,10 +1,6 @@
-# 💜 First React Page 🩷
+# 💜 My First React Page 🩷
 
-> ✨ Ensimmäinen oma **React** verkkosivuni – 2022 ✨
-
-# 💻 React App
-
-👩‍💻🌷 Built in 2022
+✨ Ensimmäinen oma **React** verkkosivuni – 2022 👩‍💻
 
 Tämä projekti on minun ensimmäinen itse rakentamani portfolio- ja esittelysivu vuodelta **2022**.
 
@@ -27,7 +23,7 @@ Tämä on ajalta, jolloin opettelin asioita itse, kokeilin, rikoin ja rakensin u
 * Ja välillä ratkaisu oli vain:
 
 ```text
-"miksi tämä ei toimi?! Miksi tämä toimii?"
+"miksi tämä ei toimi?! Miksi tämä toimii?" 🌷
 ```
 
 ---
