@@ -1,7 +1,6 @@
 {
   "name": "web-app",
   "version": "0.1.0",
-  "homepage": "https://NinaPaivinen.github.io/",
   "private": true,
   "dependencies": {
     "@merc/react-timeline": "^0.1.42",
@@ -51,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
