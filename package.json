@@ -1,5 +1,6 @@
 {
   "name": "web-app",
+    "homepage": "https://ninapaivinen.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
