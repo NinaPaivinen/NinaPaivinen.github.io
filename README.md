@@ -43,21 +43,13 @@ Projektin kautta opettelin muun muassa:
 
 ---
 
-## 💜 Koodarityttö vuonna 2022
-
-Tämä projekti on myös pieni aikakapseli siitä, millainen olin koodarina vuonna 2022. ✨
-
-Väriä piti olla.
-Persoonallisuutta piti olla.
+## 🕰️ Koodarityttö vuonna 2022
 
 Tavoitteena ei ollut rakentaa täydellistä tuotetta.
 
 Tavoitteena oli **oppia tekemään itse**.
 
 Ja juuri siksi tällä projektilla on edelleen oma paikkansa GitHubissa. 🌸
-
-
-## 🕰️ Projekti silloin vs. nyt
 
 Vuonna 2022 tämä oli minulle iso askel.
 
