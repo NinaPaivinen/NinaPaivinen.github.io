@@ -1,0 +1,50 @@
+
+/* src/components/Footer/CSS/main.css */
+
+.site-footer {
+  padding: 35px 24px;
+  background: #09070d;
+}
+
+.site-footer-inner {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.site-footer-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-footer-line span {
+  flex: 1;
+  height: 1px;
+  background: rgba(228, 154, 215, 0.15);
+}
+
+.site-footer-copy {
+  margin: 0;
+  color: #625b68;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 30px 15px;
+  }
+
+  .site-footer-line {
+    gap: 12px;
+  }
+
+  .site-footer-copy {
+    font-size: 0.62rem;
+    white-space: normal;
+  }
+}

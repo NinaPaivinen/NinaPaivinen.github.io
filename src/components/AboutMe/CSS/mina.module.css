@@ -1,0 +1,756 @@
+/* src/components/mina/mina.module.css */
+
+.aboutPage {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero,
+.storySection,
+.hobbiesSection,
+.closing {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  padding: 100px 0 120px;
+}
+
+.heroContent {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.heroText {
+  max-width: 680px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: #e49ad7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.sectionHeading h2,
+.hobbiesText h2,
+.closing h2 {
+  margin: 0;
+
+  color: #f5eafa;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+}
+
+.hero h1 span {
+  color: #e49ad7;
+}
+
+.intro {
+  max-width: 590px;
+  margin: 30px 0 0;
+
+  color: #aaa1b3;
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+.binaryBox {
+  width: fit-content;
+  margin-top: 42px;
+  padding: 20px 24px;
+
+  border: 1px solid rgba(228, 154, 215, 0.16);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.25);
+}
+
+.binaryBox > span {
+  display: block;
+  margin-bottom: 12px;
+
+  color: #777080;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+}
+
+.binary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  color: #9f7aea;
+  font-family: monospace;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+}
+
+.tiltCard {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 28px;
+
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.35),
+    0 0 80px rgba(159, 122, 234, 0.08);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.tiltCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(228, 154, 215, 0.3);
+
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(228, 154, 215, 0.1);
+}
+
+.heroImage .tiltCard {
+  width: min(400px, 100%);
+  min-height: 480px;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 25px;
+}
+
+.storySection {
+  width: min(1000px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0 140px;
+}
+
+.sectionHeading {
+  max-width: 700px;
+  margin-bottom: 90px;
+}
+
+.sectionHeading h2,
+.hobbiesText h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.sectionHeading p {
+  margin-top: 24px;
+
+  color: #98909f;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.timeline {
+  position: relative;
+  padding: 10px 0;
+}
+
+.timeline::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(228, 154, 215, 0.45),
+      rgba(159, 122, 234, 0.45),
+      transparent
+    );
+
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+
+  width: 50%;
+  padding: 0 55px 70px 0;
+}
+
+.timelineRight {
+  margin-left: 50%;
+  padding: 0 0 70px 55px;
+}
+
+.timelineDot {
+  position: absolute;
+  top: 7px;
+  right: -6px;
+
+  width: 11px;
+  height: 11px;
+
+  border: 2px solid #e49ad7;
+  border-radius: 50%;
+
+  background: #09070d;
+  box-shadow: 0 0 18px rgba(228, 154, 215, 0.5);
+}
+
+.timelineRight .timelineDot {
+  right: auto;
+  left: -5px;
+}
+
+.timelineCard {
+  padding: 26px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.timelineCard:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(228, 154, 215, 0.18);
+  background: rgba(228, 154, 215, 0.035);
+}
+
+.timelineDate {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #e49ad7;
+  font-family: monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+}
+
+.timelineCard h3 {
+  margin: 0 0 12px;
+
+  color: #eee5f1;
+  font-size: 1.25rem;
+}
+
+.timelineCard p {
+  margin: 0;
+
+  color: #9b929f;
+  line-height: 1.75;
+}
+
+.timelineImage {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.timelineImage img {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.timelineCard:hover .timelineImage img {
+  transform: scale(1.04);
+}
+
+.hobbiesSection {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0 140px;
+}
+
+.hobbiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 0.65fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.hobbiesText p {
+  max-width: 600px;
+  margin: 25px 0;
+
+  color: #9b929f;
+  line-height: 1.8;
+}
+
+.hobbiesText ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin: 35px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hobbiesText li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  color: #b8afbd;
+  line-height: 1.6;
+}
+
+.hobbiesText li span {
+  color: #e49ad7;
+}
+
+.hobbyAvatar {
+  display: flex;
+  justify-content: center;
+}
+
+.hobbyAvatar .tiltCard {
+  width: min(360px, 100%);
+}
+
+.hobbyAvatar img {
+  width: 100%;
+  padding: 35px;
+}
+
+.catGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+
+  margin-top: 90px;
+}
+
+.catGallery .tiltCard {
+  min-height: 260px;
+}
+
+.catGallery img {
+  width: 100%;
+  height: 260px;
+  padding: 30px;
+  object-fit: contain;
+}
+
+.closing {
+  width: min(850px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0 180px;
+  text-align: center;
+}
+
+.closing h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.closing p {
+  max-width: 680px;
+  margin: 30px auto 0;
+
+  color: #9b929f;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: auto;
+    padding: 80px 0 90px;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4.2rem);
+  }
+
+  .heroImage .tiltCard {
+    min-height: 350px;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timelineItem,
+  .timelineRight {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 50px 38px;
+  }
+
+  .timelineDot,
+  .timelineRight .timelineDot {
+    right: auto;
+    left: 3px;
+  }
+
+  .hobbiesGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .catGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .catGallery .tiltCard {
+    min-height: 220px;
+  }
+
+  .catGallery img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent,
+  .storySection,
+  .hobbiesSection,
+  .closing {
+    width: calc(100% - 30px);
+  }
+
+  .binaryBox {
+    width: 100%;
+  }
+
+  .timelineCard {
+    padding: 20px;
+  }
+}
+
+
+.aboutPage {
+  background:
+    radial-gradient(
+      circle at 18% 25%,
+      rgba(228, 154, 215, 0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 82% 35%,
+      rgba(80, 214, 255, 0.06),
+      transparent 28%
+    ),
+    #09070d;
+}
+
+/* HERO ATMOSPHERE */
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(
+      rgba(228, 154, 215, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(228, 154, 215, 0.055) 1px,
+      transparent 1px
+    );
+  background-size: 60px 60px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 75%,
+    transparent
+  );
+}
+
+/* TITLE GLOW */
+
+.hero h1 {
+  text-shadow:
+    0 0 35px rgba(228, 154, 215, 0.05);
+}
+
+.hero h1 span {
+  background: linear-gradient(
+    90deg,
+    #e49ad7,
+    #ff62c7,
+    #50d6ff,
+    #9f7aea
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: titleGradient 7s ease-in-out infinite;
+}
+
+/* INTRO */
+
+.intro {
+  position: relative;
+}
+
+/* BINARY */
+
+.binaryBox {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(228, 154, 215, 0.22);
+  box-shadow:
+    0 20px 70px rgba(0, 0, 0, 0.25),
+    0 0 35px rgba(228, 154, 215, 0.05);
+}
+
+.binaryBox::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #e49ad7,
+    #50d6ff,
+    transparent
+  );
+  box-shadow:
+    0 0 15px rgba(228, 154, 215, 0.7),
+    0 0 30px rgba(80, 214, 255, 0.4);
+  animation: binaryScan 5s linear infinite;
+}
+
+.binaryBox::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 5px,
+      rgba(228, 154, 215, 0.018) 6px
+    );
+}
+
+.binary {
+  position: relative;
+  z-index: 2;
+  text-shadow:
+    0 0 10px rgba(159, 122, 234, 0.45);
+}
+
+.binary strong {
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.binary strong:hover {
+  color: #50d6ff;
+  text-shadow:
+    0 0 10px rgba(80, 214, 255, 0.8),
+    0 0 25px rgba(80, 214, 255, 0.35);
+}
+
+/* IMAGE */
+
+.heroImage {
+  position: relative;
+}
+
+.heroImage::before {
+  content: '';
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(228, 154, 215, 0.13),
+      rgba(80, 214, 255, 0.05) 45%,
+      transparent 70%
+    );
+  filter: blur(10px);
+  animation: imageGlow 7s ease-in-out infinite;
+}
+
+.heroImage::after {
+  content: 'It’s me. Maybe.';
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  color: rgba(228, 154, 215, 0.5);
+  font-family: monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+}
+
+/* IMAGE CARD */
+
+.heroImage .tiltCard {
+  z-index: 2;
+  border: 1px solid rgba(228, 154, 215, 0.18);
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(228, 154, 215, 0.07),
+      transparent 60%
+    ),
+    rgba(255, 255, 255, 0.025);
+}
+
+.heroImage .tiltCard::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(80, 214, 255, 0.1);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.heroImage .tiltCard::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 45px;
+  height: 45px;
+  border-top: 2px solid #e49ad7;
+  border-left: 2px solid #e49ad7;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.heroImage img {
+  position: relative;
+  z-index: 1;
+  filter:
+    drop-shadow(0 0 25px rgba(228, 154, 215, 0.08))
+    drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
+}
+
+/* FLOATING TECH MARKERS */
+
+.heroImage .tiltCard {
+  animation: cardFloat 7s ease-in-out infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes titleGradient {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+
+  50% {
+    background-position: 100% center;
+  }
+}
+
+@keyframes binaryScan {
+  0% {
+    top: -5%;
+  }
+
+  100% {
+    top: 105%;
+  }
+}
+
+@keyframes imageGlow {
+  0%,
+  100% {
+    transform: scale(0.95);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 span,
+  .binaryBox::before,
+  .heroImage::before,
+  .heroImage .tiltCard {
+    animation: none;
+  }
+}
