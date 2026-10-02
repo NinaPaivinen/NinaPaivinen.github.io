@@ -5,7 +5,7 @@ function Pre() {
   return (
     <div className="preloader">
       <div className="preloader-content">
-        <span className="preloader-logo">NP</span>
+        <span className="preloader-logo">coderinna portfolio</span>
 
         <p>Loading...</p>
 

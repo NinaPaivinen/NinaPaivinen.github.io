@@ -22,7 +22,7 @@ function Navbar() {
         <nav className="navbar-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#archive">Archive</a>
+          <a href="#version">Archive</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
