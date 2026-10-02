@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-import Particle from '../Elements/Particle/Particle.jsx';
+import Particle from './Particle/Particle.jsx';
 
 import myImg2 from './Images/girl.webp';
 

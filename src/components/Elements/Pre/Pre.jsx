@@ -1,11 +1,14 @@
-
 // src/components/Pre.jsx
+
+import './CSS/main.css';
 
 function Pre() {
   return (
     <div className="preloader">
       <div className="preloader-content">
-        <span className="preloader-logo">coderinna portfolio</span>
+        <span className="preloader-logo">
+          ✦
+        </span>
 
         <p>Loading...</p>
 

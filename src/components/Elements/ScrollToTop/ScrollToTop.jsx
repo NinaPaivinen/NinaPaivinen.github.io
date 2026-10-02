@@ -4,6 +4,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import './CSS/main.css';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
